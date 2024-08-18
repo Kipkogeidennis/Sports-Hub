@@ -1,0 +1,90 @@
+<!-- fragment_basketball.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Basketball Team Section -->
+        <TextView
+            android:id="@+id/textViewBasketballTeam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Basketball Team"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="16dp" />
+
+        <!-- Basketball Players Section -->
+        <TextView
+            android:id="@+id/textViewBasketballPlayers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shooting Stars"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="16dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewBasketballPlayers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_basketball_player"/>
+
+        <!-- Basketball Players Section -->
+        <TextView
+            android:id="@+id/textViewBasketballTeams"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Basketball Teams"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="16dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewBasketballvTeams"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_basketball_team"/>
+        <!-- Upcoming Games Section -->
+        <TextView
+            android:id="@+id/textViewUpcomingGames"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upcoming Games"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="16dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewUpcomingGames"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_upcoming_game"/>
+
+        <!-- Past Games Section -->
+        <TextView
+            android:id="@+id/textViewPastGames"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Past Games"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="16dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewPastGames"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_past_game"/>
+
+    </LinearLayout>
+</ScrollView>

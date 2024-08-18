@@ -1,0 +1,55 @@
+<!-- fragment_volleyball.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Text view for Volleyball title -->
+        <TextView
+            android:id="@+id/textViewVolleyballTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volleyball Games"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:padding="16dp" />
+
+        <!-- RecyclerView for upcoming volleyball matches -->
+        <TextView
+            android:id="@+id/textViewUpcomingVolleyballMatches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upcoming Matches"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="16dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewUpcomingVolleyballMatches"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_upcoming_volleyball_match"/>
+
+        <!-- RecyclerView for recent volleyball matches -->
+        <TextView
+            android:id="@+id/textViewRecentVolleyballMatches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent Matches"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="16dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewRecentVolleyballMatches"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_upcoming_footballmatch"/>
+
+    </LinearLayout>
+</ScrollView>

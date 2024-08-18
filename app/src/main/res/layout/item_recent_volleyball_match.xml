@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+app:contentPadding="10dp"
+app:cardUseCompatPadding="true"
+app:cardCornerRadius="10dp"
+app:cardElevation="0dp"
+app:cardBackgroundColor="@color/white">
+    <!-- item_recent_volleyball_match.xml -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Text view for displaying team names -->
+        <TextView
+            android:id="@+id/textViewTeams"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Team A vs Team B" />
+
+        <!-- Text view for displaying match result -->
+        <TextView
+            android:id="@+id/textViewResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Result: Team A - Team B" />
+
+        <!-- Text view for displaying match date -->
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:text="Match Date: Jan 01, 2023" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
